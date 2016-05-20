@@ -1,0 +1,36 @@
+{
+  "name": "<%= project %>",
+  "version": "0.0.1",
+  "description": "base project for react projects",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "run:prod": "node server.js",
+    "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
+    "build": "npm run clean && npm run lint && npm run build:webpack",
+    "start": "./node_modules/.bin/babel-node devServer.js",
+    "lint": "eslint src",
+    "test": "NODE_ENV=testing ./node_modules/.bin/mocha test",
+    "test:watch": "npm run test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Madadata/<%= project %>.git"
+  },
+  "keywords": [
+    "react",
+    "base",
+    "boilerplate"
+  ],
+  "author": "<%= author %>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Madadata/<%= project %>/issues"
+  },
+  "homepage": "https://github.com/Madadata/<%= project %>#readme",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
