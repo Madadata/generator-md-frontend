@@ -1,6 +1,6 @@
 {
-  "name": "generator-md-react-base",
-  "version": "0.1.1",
+  "name": "generator-md-frontend",
+  "version": "0.1.0",
   "description": "base project for react projects",
   "files": [
     "app"
