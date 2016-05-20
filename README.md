@@ -1,4 +1,4 @@
-# generator-md-react-base [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-md-react-base
 > base project for react projects
 
 ## Installation
@@ -26,13 +26,3 @@ yo md-react-base
 ## License
 
 MIT © [zhenghe](https://github.com/ZhengHe-MD)
-
-
-[npm-image]: https://badge.fury.io/js/generator-md-react-base.svg
-[npm-url]: https://npmjs.org/package/generator-md-react-base
-[travis-image]: https://travis-ci.org/Madadata/generator-md-react-base.svg?branch=master
-[travis-url]: https://travis-ci.org/Madadata/generator-md-react-base
-[daviddm-image]: https://david-dm.org/Madadata/generator-md-react-base.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/Madadata/generator-md-react-base
-[coveralls-image]: https://coveralls.io/repos/Madadata/generator-md-react-base/badge.svg
-[coveralls-url]: https://coveralls.io/r/Madadata/generator-md-react-base
