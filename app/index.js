@@ -46,13 +46,13 @@ module.exports = yeoman.Base.extend({
     // config files for
     _.forEach(configFilesForCopy, function(file) {
       this.fs.copy(
-        this.templatePath(file),
+        this.templatePath('root/' + file),
         this.destinationPath(file)
       );
     }.bind(this));
 
     this.fs.copyTpl(
-      this.templatePath('_package.json'),
+      this.templatePath('root/_package.json'),
       this.destinationPath('package.json'),
       {
         author: this.props.author,
@@ -60,7 +60,7 @@ module.exports = yeoman.Base.extend({
       }
     );
     this.fs.copyTpl(
-      this.templatePath('_index.html'),
+      this.templatePath('root/_index.html'),
       this.destinationPath('index.html'),
       { project: this.props.project }
     );
