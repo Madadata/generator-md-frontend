@@ -7,13 +7,13 @@ First, install [Yeoman](http://yeoman.io) and generator-md-react-base using [npm
 
 ```bash
 npm install -g yo
-npm install -g generator-md-react-base
+npm install -g generator-md-frontend
 ```
 
 Then generate your new project:
 
 ```bash
-yo md-react-base
+yo md-frontend
 ```
 
 ## Getting To Know Yeoman
