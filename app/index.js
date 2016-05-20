@@ -36,7 +36,6 @@ module.exports = yeoman.Base.extend({
     var configFilesForCopy = [
       'LICENSE',
       '.babelrc',
-      '.gitignore',
       '.eslintrc',
       'devServer.js',
       'webpack.config.common.js',
@@ -50,6 +49,11 @@ module.exports = yeoman.Base.extend({
         this.destinationPath(file)
       );
     }.bind(this));
+
+    this.fs.copy(
+      this.templatePath('root/gitignore-file'),
+      this.destinationPath('.gitignore')
+    );
 
     this.fs.copyTpl(
       this.templatePath('root/_package.json'),
